@@ -40,45 +40,4 @@ it('should return 200 and area calculated', function (done) {
    })
 });
 
-/*
-describe("POST /areacirculo", function () {
-    it("should return area of a circle", async function () {
-      const response = await request(app)
-        .post("/areacirculo")
-        .send({ radio: 9 })  
-        .expect(response.status).to.eql(200)  
-      const attributes = response.body.data.attributes;
-      expect(attributes).to.include.keys("area");
-      expect(attributes.area).to.eql(201.06);
-    });
-  });
-*/
-
-/*
-describe('POST /areacirculo', function () {
-    it('should return area of a circle', async () => {        
-        return request(app)
-         .post('/areacirculo')
-         .send({ radio: 9 })
-         .expect(app)
-         .then((res) => {
-          expect(res.body).to.have.a.property('area');
-         });
-       });
-});
-*/
-
-/*
-describe('POST /areacirculo', function () {
-    it('Respond with: Ok!', function () {
-        request(app).post('/areacirculo').
-        send({ radio: 9 }).
-        expect('{"response":"area"}').
-        expect(response.status).to.eql(200)
-        const attributes = response.body.data.area;
-        expect(attributes).to.include.keys("area")
-        expect(attributes.area).to.eql(201)
-    });
-});
-*/
 // NOTA: los test solo funcionan con node 12 o 14 por la version de mocha
